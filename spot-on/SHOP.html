@@ -60,8 +60,8 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 400px;
-      height: 400px;
+      width: deviceWidth;
+      height: 1000px;
     }
 
     .container0{
@@ -219,6 +219,20 @@
 
     <link rel="shortcut icon" type="image/png" href="./img/spotexample.png">
   <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+ <script>
+    window.addEventListener('DOMContentLoaded', function() {
+      // Get the device width
+      var deviceWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+      
+      // Convert deviceWidth to an integer
+      var deviceWidthInt = parseInt(deviceWidth);
+      
+      // Use the device width as needed
+      // For example, display it in a paragraph element with id="result"
+      var resultElement = document.getElementById('result');
+      resultElement.innerHTML = 'Device Width: ' + deviceWidthInt;
+    });
+  </script>
 
   </head>
   <body>
@@ -240,7 +254,7 @@
 
 
     <div class="image-section">
-    <model-viewer id="reveal" loading="eager" camera-controls touch-action="pan-y" auto-rotate poster="./img/SPOTEXAMPLE.png" src="./chewmodel01.glb" shadow-intensity="1" alt="A 3D model of a shishkebab"></model-viewer>
+    <model-viewer id="reveal" loading="eager" camera-controls touch-action="pan-y" auto-rotate poster="./img/SPOTEXAMPLE.png" src="./chewmodel01.glb" shadow-intensity=".1" alt="A 3D model of a chew toy"></model-viewer>
     <button class="my-button">Click Me</button>
 
     </div>
