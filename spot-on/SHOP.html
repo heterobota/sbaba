@@ -56,10 +56,10 @@
     }
 
     .model-container {
-      position: absolute;
-
-      width: var(--device-width, 100px);
-      height: var(--device-height, 100px);
+      height: 45vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .container0{
@@ -217,16 +217,7 @@
 
     <link rel="shortcut icon" type="image/png" href="./img/spotexample.png">
   <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
-  <script>
-    window.addEventListener('DOMContentLoaded', function() {
-      var deviceWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-      var deviceHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-      
-      var container = document.getElementById('container');
-      container.style.setProperty('--device-width', deviceWidth + 'px');
-      container.style.setProperty('--device-height', deviceHeight + 'px');
-    });
-  </script>
+
 
   </head>
   <body>
