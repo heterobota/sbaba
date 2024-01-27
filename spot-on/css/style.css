@@ -113,13 +113,10 @@ header nav{
 }
 
 header a:hover{
-  color:#ffee00;
-  font-style:oblique;
+  color:#5c5c5c;
 }
 header a:active{
-  color:#ffee00;
-  font-style:oblique;
-  font-size:13px;
+  color:#000000;
 }
 
 /*showcase*/
