@@ -99,6 +99,7 @@ header li{
 
 header #branding{
   float:left;
+  display:inline;
   margin-left: 8px;
   margin-right: 40px;
 }
