@@ -4,242 +4,266 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Agnieszka Pilat</title>
-    <link rel="shortcut icon" type="image/png" href="./img/spotexample.png">
-    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
 
     <style>
-      body {
-        font-family: monospace;
-        font-size: 14px;
-        line-height: 1;
-        padding: 0;
-        margin: 0;
-        background-color: #FFFFFF;
-        text-decoration: none;
-      }
 
-      header {
-        background: #ffffff;
-        color: #000000;
-        padding-top: 40px;
-        min-height: 40px;
-        width: 100%;
-        text-align: center;
-      }
+      model-viewer {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    body{
+      font-family: monospace;
+      font-size:14px;
+      line-height:1;
+      padding:0;
+      margin:0;
+      background-color:#FFFFFF;
+      text-decoration:none;
 
-      header a {
-        color: #000000;
-        text-decoration: none;
-        font-size: 14px;
-      }
+    }
 
-      header ul {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
 
-      header li {
-        display: inline;
-        padding: 0 20px 11px 20px;
-      }
 
-      header #branding {
-        float: left;
-        margin-left: 20px;
-      }
 
-      header #branding h1 {
-        margin: 0;
-        font-size: 18px;
-      }
 
-      header nav {
-        float: right;
+      header{
+        padding-bottom:11px;
       }
-
-      header a:hover {
-        color: #5c5c5c;
+      #showcase h1{
+        margin-top: 16px;
       }
+    }
+    /*global*/
+    .my-button {
+      display: flex;
+      justify-content: center;
+      padding: 10px 20px;
+      background-color: #ffffff;
+      color: black;
+      text-decoration: none;
+      border-radius: 4px;
+      border: none;
+      cursor: pointer;
+    }
 
-      header a:active {
-        color: #ababab;
-      }
 
-      /* Global Styles */
-      .my-button {
-        display: flex;
-        justify-content: center;
-        padding: 10px 20px;
-        background-color: #ffffff;
-        color: black;
-        text-decoration: none;
-        border-radius: 4px;
-        border: none;
-        cursor: pointer;
-      }
 
-      .my-button:hover {
-        background-color: #5c5c5c;
-      }
+    .my-button:hover {
+      background-color: #5c5c5c;
+    }
 
-      .centered-div {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
+    .centered-div {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
 
-      .model-container {
-        display: flex;
-        height: 100%;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-      }
+    .model-container {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
 
-      .container {
-        width: 80%;
-        margin: auto;
-        overflow: hidden;
-      }
+    .container0{
+      width:80%;
+      margin:auto;
+      overflow:hidden;
+    }
 
-      .image-section {
-        height: 45vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+    .image-section {
+      height: 45vh; /* Set the height to occupy the entire viewport */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-      /* Showcase Styles */
-      #showcase {
-        text-decoration: underline;
+    /*header*/
+    header{
+      background:#ffffff;
+      color:#000000;
+      padding-top: 40px;
+      min-height: 40px;
+      width: 100%;
+
+    }
+
+    header a{
+      color:#000000;
+      text-decoration:none;
+      font-size:14px;
+
+    }
+
+    header ul{
+      margin:0;
+      padding:0;
+      text-align: center;
+      align-items: center;
+      align-content: center;
+    }
+
+    header li{
+      display:inline;
+      padding: 0 20px 11px 20px;
+      align-content: center;
+    }
+
+    header #branding{
+      float:left;
+      margin-left: 20px;
+      align-content: center;
+    }
+
+    header #branding h1{
+      margin:0;
+      font-size: 18px;
+      align-content: center;
+    }
+
+    header nav{
+      float:right;
+align-content: center;
+
+    }
+
+    header a:hover{
+      color:#5c5c5c;
+    }
+    header a:active{
+      color:#ababab;
+    }
+
+    /*showcase*/
+
+    #showcase{
+      text-decoration:underline;
         text-decoration-color: #000000;
-        min-height: 200px;
-        background: url('../img/showcase.jpg') no-repeat;
-        text-align: center;
-        color: #FFFFFF;
-      }
+      min-height: 200px;
+      background:url('../img/showcase.jpg') no-repeat;
+      text-align:center;
+      color:#FFFFFF;
+    }
 
-      #showcase h1 {
-        margin-top: 74px;
-        font-size: 44px;
-        margin-bottom: 13px;
-      }
+    #showcase h1{
+      margin-top: 74px;
+      font-size:44px;
+      margin-bottom:13px;
+    }
 
-      /* Boxes Styles */
-      #boxes {
-        margin-top: 22px;
-      }
+    /*boxes*/
+    #boxes{
+      margin-top:22px;
 
-      #boxes .box {
-        color: #8a2be2;
-        float: left;
-        text-align: center;
-        width: 30%;
-        padding: 8px;
-      }
+    }
 
-      #boxes .box:hover {
-        color: #00FF00;
-        font-weight: bold;
-      }
+    #boxes .box {
+      color#8a2be2;
+      float:left;
+      text-align: center;
+      width:30%;
+      padding:8px;
 
-      img {
-        width: 420px;
-      }
+    }
 
-      #boxes .box img {
-        width: 200px;
-      }
+    #boxes .box:hover{
+      color:#00FF00;
+      font-weight:bold;
+    }
+    img{width:420px}
+    #boxes .box img{
+      width: 200px;
 
-      video {
-        width: 420px;
+
+
+    }
+
+    video{
+      width:420px;
+
+
       }
 
       .box > a {
-        color: #8a2be2;
+        color:#8a2be2;
         text-decoration: none;
       }
 
       .box > a:visited {
-        color: #8a2be2;
+        color:#8a2be2;
       }
-
       .box > a:hover {
-        color: #00FF00;
-        font-style: oblique;
+        color:#00FF00;
+        font-style:oblique;
       }
-
       .box > a:active {
-        color: #00FF00;
-        font-style: oblique;
-        font-size: 20px;
+        color:#00FF00;
+        font-style:oblique;
+        font-size:20px;
       }
-
       .scene,
-      canvas {
+      canvas{
         position: absolute;
         width: 100%;
         height: 100%;
       }
 
-      /* Media Query */
-      @media (max-width: 768px) {
-        header #branding,
-        header nav,
-        header nav ul,
-        header nav li,
-        #boxes .box {
-          float: none;
-          text-align: center;
-          width: 100%;
-          display: block;
-        }
+      /*media q*/
+@media(max-width: 768px){header #branding, header nav, header nav ul, header nav li, #boxes .box{ float:none; text-align:center; width:100%; display: block}
 
-        header {
-          width: 100%;
-          text-align: center;
-        }
+header{
 
-        header a {
-          font-size: 12px;
-          padding: 0;
-          margin: 0;
-        }
+  width: 100%;
+  text-align: center;
+  align-content: center;
+}
+header a{
+  font-size:12px;
+ padding: 0 0 0 0;
+ margin: 0 0;
+ align-content: center;
+}
 
-        header #branding {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          padding-bottom: 10px;
-          margin: 0 20px;
-          text-align: center;
-        }
+header #branding{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+padding-bottom: 10px;
+  margin: 0 20px;
+  text-align: center;
+  align-content: center;
 
-        header nav ul {
-          padding: 0;
-          display: flex;
-          justify-content: center;
-          text-align: center;
-          align-items: center;
-        }
-
-        header nav li {
-          display: inline;
-          align-items: center;
-          justify-content: center;
-          text-align: center;
-          padding: 0 0 0 0;
-        }
-
-        header nav li:nth-child(3) a {
-          white-space: nowrap;
-        }
-      }
+}
+header nav ul{
+  padding: 0;
+   display: flex;
+   justify-content: center;
+  text-align: center;
+    align-items: center;
+    align-content: center;
+}
+header nav li {
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+padding: 0 0 0 0;
+}
+header nav li:nth-child(3) a {
+  white-space: nowrap;
+}
     </style>
+
+    <link rel="shortcut icon" type="image/png" href="./img/spotexample.png">
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+
+
   </head>
   <body>
     <header>
@@ -251,34 +275,48 @@
           <ul>
             <li><a href="index.html">HOME</a></li>
             <li><a href="SHOP.html">SHOP</a></li>
-            <li><a href="https://www.ngv.vic.edu.au/triennial/artists-designers/agnieszka-pilat/" target="_blank">CURRENT SHOW</a></li>
+            <li><a href="https://www.ngv.vic.gov.au/triennial/artists-designers/agnieszka-pilat/" target="_blank">CURRENT SHOW</a></li>
             <li><a href="CONTACT.html">CONTACT</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <div class="container">
-      <model-viewer src="./models/chewmodel01.glb" ar ar-modes="webxr scene-viewer quick-look fallback"
-        disable-zoom camera-controls auto-rotate poster="./img/poster01.png" shadow-intensity="0" shadow-softness="1"
-        camera-orbit="370deg 90deg 1000m" field-of-view="30deg" camera-target="4.929e-9m 0m 0m">
-      </model-viewer>
-    </div>
+<div class="container">
 
-    <div class="container">
-      <model-viewer src="./models/chewmodel03.glb" ar ar-modes="webxr scene-viewer quick-look fallback"
-        disable-zoom camera-controls auto-rotate poster="./img/poster01.png" shadow-intensity="0" shadow-softness="1"
-        camera-controls auto-rotate poster="./img/poster03.png" shadow-intensity="0" shadow-softness="1"
-        camera-orbit="370deg 90deg 1000m" field-of-view="30deg" camera-target="4.929e-9m 0m 0m">
-      </model-viewer>
-    </div>
+<model-viewer src="./models/chewmodel01.glb" ar ar-modes="webxr scene-viewer quick-look fallback"
+disable-zoom camera-controls auto-rotate poster="./img/poster01.png" shadow-intensity="0" shadow-softness="1"
+camera-orbit="370deg 90deg 1000m" field-of-view="30deg" camera-target="4.929e-9m 0m 0m">
+</model-viewer>
 
-    <div class="container">
-      <model-viewer src="./models/print04.glb" ar ar-modes="webxr scene-viewer quick-look fallback"
-        disable-zoom camera-controls auto-rotate poster="./img/poster04.png" shadow-intensity="0" shadow-softness="1"
-        camera-controls auto-rotate poster="./img/poster04.png" shadow-intensity="0" shadow-softness="1"
-        camera-orbit="370deg 90deg 1000m" field-of-view="30deg" camera-target="4.929e-9m 0m 0m">
-      </model-viewer>
-    </div>
+</div>
+
+<div class="container">
+
+<model-viewer src="./models/chewmodel03.glb" ar ar-modes="webxr scene-viewer quick-look fallback"
+disable-zoom camera-controls auto-rotate poster="./img/poster01.png" shadow-intensity="0" shadow-softness="1" camera-controls auto-rotate poster="./img/poster03.png" shadow-intensity="0" shadow-softness="1"
+camera-orbit="370deg 90deg 1000m" field-of-view="30deg" camera-target="4.929e-9m 0m 0m">
+</model-viewer>
+
+</div>
+
+
+
+<div class="container">
+
+<model-viewer src="./models/print04.glb" ar ar-modes="webxr scene-viewer quick-look fallback"
+disable-zoom camera-controls auto-rotate poster="./img/poster04.png" shadow-intensity="0" shadow-softness="1" camera-controls auto-rotate poster="./img/poster04.png" shadow-intensity="0" shadow-softness="1"
+camera-orbit="370deg 90deg 1000m" field-of-view="30deg" camera-target="4.929e-9m 0m 0m">
+</model-viewer>
+
+</div>
+
+
+
+
+
+
+
+
   </body>
 </html>
