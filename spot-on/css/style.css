@@ -235,7 +235,7 @@ justify-content: space-between;
       }
 
       /*media q*/
-      @media(max-width: 900px) {
+      @media(max-width: 910px) {
     header #branding,
     header nav,
     header nav ul,
