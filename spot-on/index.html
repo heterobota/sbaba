@@ -6,22 +6,28 @@
     <title>Agnieszka Pilat</title>
 
     <style>
-
+/* */
     .slideshow-container {
-    max-width: 800px;
-    position: relative;
-    margin: auto;
-    overflow: hidden; /* Ensure hidden overflow for the sliding effect */
-  }
+      max-width: 800px;
+      position: relative;
+      margin: auto;
+      overflow: hidden; /* Ensure hidden overflow for the sliding effect */
+    }
 
-  .slide {
-    display: flex;
-    transition: transform 0.5s ease; /* Add a smooth sliding transition */
-  }
+    .slides {
+      display: flex; /* Use flexbox to arrange slides in a row */
+      transition: transform 0.5s ease; /* Add a smooth sliding transition */
+    }
 
-  img {
-    width: 100%;
-  }
+    .slide {
+      min-width: 100%; /* Each slide takes the full width */
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+/* */
 
 
       model-viewer {
@@ -317,18 +323,19 @@ flex-grow: 1;
     </header>
 
 
-
-<div class="slideshow-container">
-  <div class="slide fade">
-    <img src="./img/bannerComp.png" alt="Slide 1">
-  </div>
-  <div class="slide fade">
-    <img src="./img/poster01.png" alt="Slide 2">
-  </div>
-  <div class="slide fade">
-    <img src="./img/poster03.png" alt="Slide 3">
-  </div>
-</div>
+    <div class="slideshow-container">
+      <div class="slides">
+        <div class="slide">
+          <img src="./img/bannerComp.png" alt="Slide 1">
+        </div>
+        <div class="slide">
+          <img src="./img/poster01.png" alt="Slide 2">
+        </div>
+        <div class="slide">
+          <img src="./img/poster03.png" alt="Slide 3">
+        </div>
+      </div>
+    </div>
 
 <script src="script.js"></script>
 

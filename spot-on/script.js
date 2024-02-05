@@ -1,18 +1,17 @@
 let slideIndex = 0;
 
 function showSlides() {
-  let slides = document.getElementsByClassName("slide");
+  let slides = document.querySelector(".slides");
+  let slideWidth = document.querySelector(".slide").offsetWidth;
 
   slideIndex++;
 
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
+  if (slideIndex >= slides.children.length) {
+    slideIndex = 0;
   }
 
   // Adjust the transform property for the sliding effect
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.transform = `translateX(-${(slideIndex - 1) * 100}%)`;
-  }
+  slides.style.transform = `translateX(-${slideIndex * slideWidth}px)`;
 
   setTimeout(showSlides, 2000); // Change slide every 2 seconds (adjust as needed)
 }
