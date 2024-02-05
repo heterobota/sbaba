@@ -87,7 +87,14 @@
       width:80%;
       margin:auto;
       overflow:hidden;
-      justify-content: space-between;
+      justify-content: center;
+      font-family: monospace;
+      font-size:14px;
+      line-height:1;
+      padding:0;
+      margin:0;
+      background-color:#FFFFFF;
+      text-decoration:none;
     }
 
     .image-section {
