@@ -1,4 +1,33 @@
+/* */
+    .slideshow-container {
+      max-width: 100vw;
+      position: relative;
+      margin: auto;
+      overflow: hidden; /* Ensure hidden overflow for the sliding effect */
+    }
 
+    .slides {
+      display: flex; /* Use flexbox to arrange slides in a row */
+      transition: transform 3.0s ease; /* Add a smooth sliding transition */
+    }
+
+    .slide {
+      min-width: 100%; /* Each slide takes the full width */
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+/* */
+
+
+      model-viewer {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+    }
     body{
       font-family: monospace;
       font-size:14px;
@@ -9,6 +38,9 @@
       text-decoration:none;
 
     }
+
+
+
 
 
       header{
@@ -109,7 +141,7 @@
 
     header #branding h1{
       margin:0;
-      font-size: 18px;
+      font-size: 110px;
 
     }
 
@@ -162,7 +194,7 @@ justify-content: space-between;
       float:left;
       text-align: center;
       width:30%;
-      padding:8px;
+      padding:10px;
 
     }
 
@@ -170,13 +202,7 @@ justify-content: space-between;
       color:#00FF00;
       font-weight:bold;
     }
-    img{width:420px}
-    #boxes .box img{
-      width: 200px;
 
-
-
-    }
 
     video{
       width:420px;
@@ -209,11 +235,11 @@ justify-content: space-between;
       }
 
       /*media q*/
-      @media(max-width: 768px){header #branding, header nav, header nav ul, header nav li, #boxes .box{ float:none; text-align:center; width:100%; justify-content: space-between; font-size:8px; padding: 0 0 0 0;
+      @media(max-width: 900px){header #branding, header nav, header nav ul, header nav li, #boxes .box{ float:none; text-align:center; width:100%; justify-content: space-between; font-size:10px; padding: 0 0 0 0;
       margin: 0 0;}
 
       header{
-        font-size:8px;
+        font-size:10px;
       margin: 0 auto;
       width: 97%;
       text-align: center;
@@ -222,7 +248,7 @@ justify-content: space-between;
       }
       header a{
 
-      font-size:8px;
+      font-size:10px;
       padding: 0 0 0 0;
       margin: 0 0;
       flex-grow: 1;
@@ -230,7 +256,7 @@ justify-content: space-between;
       }
 
       header #branding{
-        font-size:8px;
+        font-size:10px;
       display: flex;
       justify-content: space-between;
       padding: 0 0 0 0;
@@ -240,7 +266,7 @@ justify-content: space-between;
 
       }
       header nav ul{
-        font-size:8px;
+        font-size:10px;
         padding: 0 0 0 0;
         margin: 0 0;
       display: flex;
