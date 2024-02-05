@@ -14,7 +14,7 @@ function showSlides() {
   // Adjust the transform property for the sliding effect
   slidesContainer.style.transform = `translateX(-${slideIndex * slideWidth}px)`;
 
-  setTimeout(showSlides, 10000); // Change slide every 2 seconds (adjust as needed)
+  setTimeout(showSlides, 75000); // Change slide every 2 seconds (adjust as needed)
 }
 
 // Start the slideshow when the page loads
