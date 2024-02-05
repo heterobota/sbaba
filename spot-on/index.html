@@ -8,18 +8,20 @@
     <style>
 
     .slideshow-container {
-      max-width: 800px;
-      position: relative;
-      margin: auto;
-    }
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+    overflow: hidden; /* Ensure hidden overflow for the sliding effect */
+  }
 
-    .slide {
-      display: none;
-    }
+  .slide {
+    display: flex;
+    transition: transform 0.5s ease; /* Add a smooth sliding transition */
+  }
 
-    img {
-      width: 100%;
-    }
+  img {
+    width: 100%;
+  }
 
 
       model-viewer {
