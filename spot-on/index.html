@@ -7,6 +7,21 @@
 
     <style>
 
+    .slideshow-container {
+      max-width: 800px;
+      position: relative;
+      margin: auto;
+    }
+
+    .slide {
+      display: none;
+    }
+
+    img {
+      width: 100%;
+    }
+
+
       model-viewer {
       width: 100vw;
       height: 100vh;
@@ -187,13 +202,7 @@ justify-content: space-between;
       color:#00FF00;
       font-weight:bold;
     }
-    img{width:420px}
-    #boxes .box img{
-      width: 200px;
 
-
-
-    }
 
     video{
       width:420px;
@@ -305,9 +314,22 @@ flex-grow: 1;
       </div>
     </header>
 
-<div class="container">
 
+
+<div class="slideshow-container">
+  <div class="slide fade">
+    <img src="bannerComp.png" alt="Slide 1">
+  </div>
+  <div class="slide fade">
+    <img src="poster01.png" alt="Slide 2">
+  </div>
+  <div class="slide fade">
+    <img src="poster03.png" alt="Slide 3">
+  </div>
 </div>
+
+<script src="script.js"></script>
+
 
 
 
