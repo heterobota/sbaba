@@ -44,7 +44,7 @@
 
 
       header{
-        padding-bottom: 0px;
+        padding-bottom: 17px;
       }
       #showcase h1{
         margin-top: 16px;
@@ -279,7 +279,7 @@ justify-content: space-between;
 
     header nav ul {
       font-size: 10px;
-      padding: 0;
+      padding: 10px 10px;
       margin: 0;
       display: flex;
       justify-content: space-between;
