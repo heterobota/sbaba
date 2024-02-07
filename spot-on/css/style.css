@@ -70,17 +70,13 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, .5); /* Adjust the overlay color and opacity */
-        transition: opacity 0.3s ease, filter 0.3s ease; /* Add filter to the transition */
-        filter: grayscale(100%); /* Apply grayscale filter by default */
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: opacity 0.3s ease;
     }
 
     .image-container:hover::before {
         opacity: 0;
-        filter: grayscale(0%); /* Remove grayscale filter on hover */
     }
-
-
 
 
     .caption {
