@@ -73,6 +73,7 @@
         background-color: rgba(0, 0, 0, 0.5); /* Adjust the overlay color and opacity */
         transition: opacity 0.3s ease;
         filter: grayscale(100%);
+        transition: filter 0.3s ease;
     }
 
     .image-container:hover::before {
