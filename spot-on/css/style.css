@@ -41,6 +41,10 @@
       justify-content: center;
       gap: 20px;
     }
+    
+  a {
+      text-decoration: none !important;
+    }
 
 
     .image-group {
@@ -215,7 +219,7 @@ justify-content: space-between;
     /*showcase*/
 
     #showcase{
-      text-decoration:underline;
+      text-decoration:none;
         text-decoration-color: #000000;
       min-height: 200px;
       background:url('../img/showcase.jpg') no-repeat;
