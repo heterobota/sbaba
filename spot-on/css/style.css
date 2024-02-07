@@ -72,10 +72,12 @@
         height: 100%;
         background-color: rgba(0, 0, 0, 0.5); /* Adjust the overlay color and opacity */
         transition: opacity 0.3s ease;
+        filter: grayscale(100%);
     }
 
     .image-container:hover::before {
         opacity: 0;
+        filter: grayscale(0%);
     }
 
     .caption {
