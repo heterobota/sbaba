@@ -73,11 +73,12 @@
         left: 0;
         width: 100%;
         text-align: center;
-        background-color: #00FFFFFF;
+        background-color: #FFFFFF;
         color: #fff;
         margin:10px 0px 0px 0px;
         font-family: monospace;
         font-size: 8px;
+        text-decoration: none;
     }
 
       header{
