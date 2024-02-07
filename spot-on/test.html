@@ -3,8 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grayscale Test</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            background-color: #f2f2f2;
+        }
+
+        .image-group {
+            flex: 1;
+            max-width: 300px;
+        }
+
         .image-container {
             position: relative;
             overflow: hidden;
@@ -16,30 +31,59 @@
             width: 100%;
             height: auto;
             display: block;
-            transition: opacity 0.3s ease;
+            filter: grayscale(100%);
+            transition: filter 0.3s ease;
         }
 
-        .image-container::before {
-            content: '';
+        .image-container:hover img {
+            filter: grayscale(0%);
+        }
+
+        .caption {
             position: absolute;
-            top: 0;
+            bottom: 0;
             left: 0;
             width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            transition: opacity 0.3s ease;
-        }
-
-        .image-container:hover::before {
-            opacity: 0;
+            text-align: center;
+            background-color: #000;
+            color: #fff;
+            padding: 5px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
         }
     </style>
 </head>
 <body>
 
-<div class="image-container">
-    <img src="./img/a1.jpg" alt="Image 1">
-</div>
+    <div class="image-group">
+        <a href="page1.html" class="image-container">
+            <img src="./img/a1.jpg" alt="Image 1">
+            <div class="caption">Image 1 Caption</div>
+        </a>
+    </div>
+
+    <div class="image-group">
+        <a href="page2.html" class="image-container">
+            <img src="./img/a2.jpg" alt="Image 2">
+            <div class="caption">Image 2 Caption</div>
+        </a>
+    </div>
+
+    <div class="image-group">
+        <a href="page3.html" class="image-container">
+            <img src="./img/a3.jpg" alt="Image 3">
+            <div class="caption">Image 3 Caption</div>
+        </a>
+    </div>
+
+    <div class="image-group">
+        <a href="page4.html" class="image-container">
+            <img src="./img/a4.jpg" alt="Image 4">
+            <div class="caption">Image 4 Caption</div>
+        </a>
+    </div>
+
+    <!-- Repeat the structure for additional images -->
 
 </body>
 </html>
