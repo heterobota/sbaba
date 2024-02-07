@@ -36,9 +36,49 @@
       margin:0;
       background-color:#FFFFFF;
       text-decoration:none;
-
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
     }
 
+
+    .image-group {
+        flex: 1;
+        max-width: 300px;
+    }
+
+    .image-container {
+        position: relative;
+        overflow: hidden;
+        border: 2px solid #000;
+        border-radius: 8px;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+        display: block;
+        filter: grayscale(100%);
+        transition: filter 0.3s ease;
+    }
+
+    .image-container:hover img {
+        filter: grayscale(0%);
+    }
+
+    .caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        background-color: #000;
+        color: #fff;
+        padding: 5px;
+        font-family: 'Courier New', monospace;
+        font-size: 12px;
+    }
 
 
 
