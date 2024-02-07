@@ -63,6 +63,7 @@
         width: 10%;
         height: auto;
         display: flex;
+        justify-content: center;
         transition: opacity 0.3s ease;
     }
 
