@@ -46,6 +46,7 @@
     .image-group {
         flex: 1;
         max-width: 300px;
+        text-decoration: none !important;
     }
 
     .image-container {
