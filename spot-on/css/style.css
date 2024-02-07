@@ -45,8 +45,8 @@
 
     .image-group {
         flex: 1;
-        max-width: 300px;
-        margin-top: 20px;
+        max-width: 95vw;
+        margin: 10 10;
     }
 
     .image-container {
@@ -54,6 +54,7 @@
         overflow: hidden;
         border: 0px solid #000;
         border-radius: 0px;
+        margin: 10 10;
     }
 
     .image-container img {
