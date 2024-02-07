@@ -77,6 +77,10 @@
     .image-container:hover::before {
         opacity: 0;
     }
+    .image-group .image-container:hover::before {
+    opacity: 0;
+}
+
 
     .caption {
         position: absolute;
