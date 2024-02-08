@@ -41,7 +41,7 @@
       justify-content: center;
       gap: 20px;
     }
-    
+
   a {
       text-decoration: none !important;
     }
@@ -127,16 +127,17 @@
     }
 
     .container0{
-      width:80%;
+      width:18vw;
+      height:auto;
       margin:auto;
       overflow:hidden;
-      justify-content: center;
       font-family: monospace;
-      font-size:14px;
+      font-size:10px;
       line-height:1;
       padding:0;
       margin:0;
       background-color:#FFFFFF;
+      color: 000;
       text-decoration:none;
     }
 
