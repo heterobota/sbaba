@@ -133,10 +133,10 @@ img{
     }
 
     .image-block img{
-      flex: 0 0 33%; /* Each block takes up half of the container width */
+      flex: 0 0 33% !important; /* Each block takes up half of the container width */
     }
     .image-block {
-      flex: 0 0 33%; /* Each block takes up half of the container width */
+      flex: 0 0 33% !important; /* Each block takes up half of the container width */
     }
 
     .text-block {
