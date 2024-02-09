@@ -128,8 +128,8 @@
     }
 
     .container0 {
-      height: 25vw; /* Take up half of the screen width */
-      width: auto; /* Take up half of the screen height */
+      width:33vh;
+      height: auto; /* Take up half of the screen height */
       margin: auto;
       overflow: hidden;
       font-family: monospace;
@@ -147,7 +147,7 @@
       width: auto; /* Take up half of the screen height */
       margin: auto;
       overflow: hidden;
-      padding: 20px; /* Add padding for some space around the content */
+      padding: 5px; /* Add padding for some space around the content */
       background-color: #FFFFFF;
       display:table-row; /* Make the container stackable */
       box-sizing: border-box; /* Include padding in the total width and height */
