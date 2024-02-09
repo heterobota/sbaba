@@ -4,11 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Agnieszka Pilat</title>
-    <link rel="shortcut icon" type="image/png" href="./img/spotexample.png">
+    <link rel="shortcut icon" type="image/png" href="./img/logo.png">
     <style>
     /* */
 
-
+    img{
+      width:20vw;
+    }
 
     /* */
 
@@ -48,15 +50,15 @@
           display: flex;
           justify-content: flex-start;
           align-items: flex-start;
-          width : 50vw;
-          height: auto;
-
+          width: 100vw; /* Set to 100% of the viewport width */
+          max-width: 800px; /* Set a maximum width for the container */
+          margin: 0 auto; /* Center the container horizontally */
+          padding: 20px; /* Add padding for spacing around the content */
+          box-sizing: border-box; /* Include padding and border in the total width */
         }
 
-        .image-block img{
-          justify-content: flex-start;
-          align-items: flex-start;
-          flex: 0 0 33% !important; /* Each block takes up half of the container width */
+        .image-block img {
+          width: 20%; /* Make the image fill its container */
         }
         .image-block {
           justify-content: flex-start;
@@ -65,14 +67,13 @@
         }
 
         .text-block {
-          flex: 0 0 33%; /* Each block takes up half of the container width */
-          padding: 10px; /* Add padding for spacing around text */
-          font-family: monospace;
-          background-color: #FFFFFF;
-          color: #000000;
-          font-size: 10px;
-        }
-
+            flex: 0 0 66%; /* Set the text block to be twice as wide */
+            padding: 10px; /* Add padding for spacing around text */
+            font-family: monospace;
+            background-color: #FFFFFF;
+            color: #000000;
+            font-size: 10px; /* Increase font size for better readability */
+}
         .container0 img {
           justify-content: flex-start;
           align-items: flex-start;
@@ -256,10 +257,10 @@
     </header>
 
     <div class="container0">
-      <div class="image-block">
-        <img src="./img/p1.jpg" alt="Description of the image">
-      </div>
-      <div class="text-block">
+       <div class="image-block">
+         <img src="./img/p1.jpg" alt="Description of the image">
+       </div>
+       <div class="text-block">
         <p>I am a painter, and machines are my subject. Like religious icons and royal portrayals of noble ancestry, my paintings conceptually trace the lineage of 21st-century robotics and artificial intelligence back to the steam-powered mechanisms of the Industrial Revolution. These machines are preemptively posing for their place in museums of the future, provoking us to consider the trajectories they embody.</p>
         <p>In my paintings, I treat each machine as an individual. I consider my subjects to be noble and beautiful. However, I do not look at a machine only in terms of the task for which it was made, but also consider its role as an actor on the broader technological stage. In that sense, they are all related, and their most profound impact on society is collective.</p>
         <p>Currently, my focus is on some of the most advanced robots of our age. They have apprenticed under me, making paintings with my guidance. Unlike purely digital, generative AI, my machines operate in the real world, and the paintings they create are artifacts of the future. Drawing inspiration from the language of modern technology and the primal expressions found in ancient cave drawings, these artworks delve into the intricate relationship between mechanics and meaning. Deceptively abstract, the symbols in these paintings, when woven together, become endeavors at communication.</p>
