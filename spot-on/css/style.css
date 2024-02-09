@@ -17,7 +17,9 @@
 
 
 /* */
-
+img{
+  width:100vw;
+}
 
       model-viewer {
       width: 100vw;
