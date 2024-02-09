@@ -129,17 +129,17 @@
 
     .container0 {
       width: 50vw; /* Take up half of the screen width */
-      height: 50vh; /* Take up half of the screen height */
+      height: auto; /* Take up half of the screen height */
       margin: auto;
       overflow: hidden;
       font-family: monospace;
       font-size: 10px; /* Adjust the font size for better readability */
-      line-height: 1.5; /* Adjust the line height for better paragraph spacing */
+      line-height: 1; /* Adjust the line height for better paragraph spacing */
       padding: 20px; /* Add padding for some space around the content */
       background-color: #FFFFFF;
       color: #000000; /* Correct color notation for black */
       text-decoration: none;
-      display: inline-block; /* Make the container stackable */
+      display:table-row; /* Make the container stackable */
       box-sizing: border-box; /* Include padding in the total width and height */
     }
 
