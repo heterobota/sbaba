@@ -128,35 +128,27 @@
     }
 
     .container0 {
-      width:33vh;
-      height: auto; /* Take up half of the screen height */
-      margin: auto;
-      overflow: hidden;
-      font-family: monospace;
-      font-size: 10px; /* Adjust the font size for better readability */
-      line-height: 1; /* Adjust the line height for better paragraph spacing */
-      padding: 20px; /* Add padding for some space around the content */
-      background-color: #FFFFFF;
-      color: #000000; /* Correct color notation for black */
-      text-decoration: none;
-      display:table-row; /* Make the container stackable */
-      box-sizing: border-box; /* Include padding in the total width and height */
-    }
-    .container0 img{
-      height: 25vw; /* Take up half of the screen width */
-      width: auto; /* Take up half of the screen height */
-      margin: auto;
-      overflow: hidden;
-      padding: 5px; /* Add padding for some space around the content */
-      background-color: #FFFFFF;
-      display:table-row; /* Make the container stackable */
-      box-sizing: border-box; /* Include padding in the total width and height */
+      display: flex;
     }
 
-    .container0 p {
-      margin-bottom: 10px; /* Adjust the margin between paragraphs */
-      width: 25vw;
+    .image-block {
+      flex: 0 0 25%; /* Each block takes up half of the container width */
     }
+
+    .text-block {
+      flex: 0 0 33%; /* Each block takes up half of the container width */
+      padding: 10px; /* Add padding for spacing around text */
+      font-family: monospace;
+      background-color: #FFFFFF;
+      color: #000000;
+      font-size: 10px;
+    }
+
+    .container0 img {
+      width: 100%; /* Make sure the image takes up the full width of its container */
+      height: auto; /* Maintain the aspect ratio of the image */
+    }
+
 
 
     .image-section {
