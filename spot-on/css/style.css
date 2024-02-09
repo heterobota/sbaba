@@ -128,7 +128,7 @@
     }
 
     .container0 {
-      height: 50vw; /* Take up half of the screen width */
+      height: 25vw; /* Take up half of the screen width */
       width: auto; /* Take up half of the screen height */
       margin: auto;
       overflow: hidden;
@@ -143,7 +143,7 @@
       box-sizing: border-box; /* Include padding in the total width and height */
     }
     .container0 img{
-      height: 50vw; /* Take up half of the screen width */
+      height: 25vw; /* Take up half of the screen width */
       width: auto; /* Take up half of the screen height */
       margin: auto;
       overflow: hidden;
@@ -155,7 +155,7 @@
 
     .container0 p {
       margin-bottom: 10px; /* Adjust the margin between paragraphs */
-      width: 50vw;
+      width: 25vw;
     }
 
 
