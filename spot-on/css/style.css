@@ -132,28 +132,7 @@ img{
       height: auto;
     }
 
-    .image-block img{
-      flex: 0 0 33% !important; /* Each block takes up half of the container width */
-    }
-    .image-block {
-      flex: 0 0 33% !important; /* Each block takes up half of the container width */
-    }
-
-    .text-block {
-      flex: 0 0 33%; /* Each block takes up half of the container width */
-      padding: 10px; /* Add padding for spacing around text */
-      font-family: monospace;
-      background-color: #FFFFFF;
-      color: #000000;
-      font-size: 10px;
-    }
-
-    .container0 img {
-      flex: 0 0 33%; /* Make sure the image takes up the full width of its container */
-      height: auto; /* Maintain the aspect ratio of the image */
-    }
-
-
+    
 
     .image-section {
       height: 45vh; /* Set the height to occupy the entire viewport */

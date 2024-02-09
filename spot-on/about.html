@@ -29,12 +29,7 @@
       width:20vw;
     }
 
-          model-viewer {
-          width: 100vw;
-          height: 100vh;
-          display: flex;
-          justify-content: center;
-        }
+
         body{
           font-family: monospace;
           font-size:14px;
@@ -54,45 +49,6 @@
           text-decoration: none !important;
         }
 
-
-        .image-group {
-            flex: 1;
-            max-width: 300px;
-            text-decoration: none !important;
-        }
-
-        .image-container {
-            position: relative;
-            overflow: hidden;
-            border: 0px solid #000;
-            border-radius: 0px;
-        }
-
-        .image-container img {
-            width: 100%;
-            height: auto;
-            display: block;
-            filter: grayscale(100%);
-            transition: filter 0.3s ease;
-        }
-
-        .image-container:hover img {
-            filter: grayscale(0%);
-        }
-
-        .caption {
-            position:inherit;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            text-align: center;
-            background-color: #FFFFFF;
-            color: #000;
-            margin:10px 0px 0px 0px;
-            font-family: monospace;
-            font-size: 8px;
-            text-decoration: none !important;
-        }
 
           header{
             padding-bottom: 17px;
@@ -114,25 +70,6 @@
           cursor: pointer;
         }
 
-
-
-        .my-button:hover {
-          background-color: #5c5c5c;
-        }
-
-        .centered-div {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-        }
-
-        .model-container {
-          display: flex;
-          height: 100%;
-          width: 100%;
-          justify-content: center;
-        }
 
         .container0 {
           display: flex;
@@ -157,7 +94,7 @@
         }
 
         .container0 img {
-          flex: 0 0 33%; /* Make sure the image takes up the full width of its container */
+          flex: 0 0 75%; /* Make sure the image takes up the full width of its container */
           height: auto; /* Maintain the aspect ratio of the image */
         }
 
