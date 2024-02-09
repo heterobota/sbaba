@@ -127,12 +127,11 @@ img{
     }
 
     .container0 {
-      display: flex;
-      width : 50vw;
+      width : 100vw;
       height: auto;
     }
 
-    
+
 
     .image-section {
       height: 45vh; /* Set the height to occupy the entire viewport */
