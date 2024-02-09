@@ -128,8 +128,8 @@
     }
 
     .container0 {
-      width: 50vw; /* Take up half of the screen width */
-      height: auto; /* Take up half of the screen height */
+      height: 50vw; /* Take up half of the screen width */
+      width: auto; /* Take up half of the screen height */
       margin: auto;
       overflow: hidden;
       font-family: monospace;
