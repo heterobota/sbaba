@@ -17,7 +17,7 @@
 
 
     .containerL {
-      margin-top: 17px;
+      margin-top: 20px;
       width: 100%;
       height: 50vh;
       overflow: hidden; /* Ensures floated elements don't overflow */
@@ -41,7 +41,17 @@
       font-size: 1px;
       word-spacing: 2px;
     }
-
+    .containerL .textBig {
+      width: 60%;
+      float: right;
+      box-sizing: border-box; /* Includes padding and border in the width */
+      padding: 10px; /* Adjust padding as needed */
+      font-family: Helvetica, Arial, sans-serif;
+      font-style: oblique;
+      font-size: 14px;
+      word-spacing: 2px;
+      text-align:right;
+    }
     .containerR {
       margin-top: 17px;
       width: 100%;
@@ -66,6 +76,18 @@
       padding: 10px; /* Adjust padding as needed */
       font-family: Helvetica, Arial, sans-serif;
       font-size: 1px;
+      word-spacing: 2px;
+      text-align:right;
+    }
+
+    .containerR .textBig {
+      width: 60%;
+      float: right;
+      box-sizing: border-box; /* Includes padding and border in the width */
+      padding: 10px; /* Adjust padding as needed */
+      font-family: Helvetica, Arial, sans-serif;
+      font-style: oblique;
+      font-size: 14px;
       word-spacing: 2px;
       text-align:right;
     }
@@ -248,6 +270,9 @@ justify-content: space-between;
 
   <div class="containerL">
     <img src="./img/p1.jpg" alt="Image 1">
+    <div class="textBig">
+      <p>Artist Statement:</p>
+    </div>
     <div class="text">
       <p>I am a painter, and machines are my subject. Like religious icons and royal portrayals of noble ancestry, my paintings conceptually trace the lineage of 21st-century robotics and artificial intelligence back to the steam-powered mechanisms of the Industrial Revolution. These machines are preemptively posing for their place in museums of the future, provoking us to consider the trajectories they embody.</p>
 </div>
@@ -265,9 +290,13 @@ justify-content: space-between;
 
   <div class="containerR">
     <img src="./img/p2.JPG" alt="Image 1">
+    <div class="textBig">
+      <p>Selected Residencies:</p>
+    </div>
     <div class="text">
       <p>Agility Robotics, Artist-in-Residence with Digit. 2022 - Current.</p>
 </div>
+
 <div class="text">
       <p>SpaceX, Artist-in-Residence. 2022 - Current.</p>
 </div>
