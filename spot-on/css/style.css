@@ -32,7 +32,7 @@ img{
     body{
       font-family: monospace;
       font-size:14px;
-      line-height:1;
+      line-height:0;
       padding:0;
       margin:0;
       background-color:#FFFFFF;
@@ -45,6 +45,8 @@ img{
     }
 
   a {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
       text-decoration: none !important;
       color: #000000;
       align-content: center;
@@ -147,7 +149,7 @@ img{
     /*header*/
     header{
       margin: 0 auto;
-      
+
       background:#ffffff;
       color:#000000;
       padding-top: 34px;
