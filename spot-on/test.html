@@ -1,89 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            background-color: #f2f2f2;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Website</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
 
-        .image-group {
-            flex: 1;
-            max-width: 300px;
-        }
+    header{
+      padding-bottom: 17px;
+    }
 
-        .image-container {
-            position: relative;
-            overflow: hidden;
-            border: 2px solid #000;
-            border-radius: 8px;
-        }
+    .container {
+      width: 100%;
+      height: 50vh;
+      overflow: hidden; /* Ensures floated elements don't overflow */
+      clear: both; /* Clears floats to ensure containers stack properly */
+    }
 
-        .image-container img {
-            width: 100%;
-            height: auto;
-            display: block;
-            filter: grayscale(100%);
-            transition: filter 0.3s ease;
-        }
+    .container img {
+      float: left;
+      width: 20%;
+    }
 
-        .image-container:hover img {
-            filter: grayscale(0%);
-        }
+    .container .text {
+      width: 50%;
+      float: left;
+      box-sizing: border-box; /* Includes padding and border in the width */
+      padding: 10px; /* Adjust padding as needed */
+    }
 
-        .caption {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            text-align: center;
-            background-color: #000;
-            color: #fff;
-            padding: 5px;
-            font-family: 'Courier New', monospace;
-            font-size: 12px;
-        }
-    </style>
+    header{
+      margin: 0 auto;
+      background:#ffffff;
+      color:#000000;
+      padding-top: 34px;
+      min-height: 20px;
+      width: 100%;
+      justify-content: space-between;
+
+
+    }
+
+    header a{
+      color:#000000;
+      text-decoration:none;
+      font-size:14px;
+      flex-grow: 1;
+      justify-content: space-between;
+
+    }
+
+    header ul{
+      margin:0;
+      padding:0;
+      text-align: center;
+
+      flex-grow: 1;
+      justify-content: space-between;
+    }
+
+    header li{
+      justify-content: space-between;
+      display:inline;
+      padding: 0 20px 11px 20px;
+      flex-grow: 1;
+    }
+
+    header #branding{
+      float:left;
+
+    }
+
+    header #branding h1{
+      margin:0;
+      font-size: 10px;
+
+    }
+
+    header nav{
+      float:right;
+
+flex-grow: 1;
+justify-content: space-between;
+
+    }
+    header nav a{
+
+flex-grow: 1;
+justify-content: space-between;
+
+    }
+
+    header a:hover{
+      color:#5c5c5c;
+    }
+    header a:active{
+      color:#ababab;
+    }
+
+    /*showcase*/
+
+
+
+
+
+      /*media q*/
+      @media(max-width: 910px) {
+    header #branding,
+    header nav,
+    header nav ul,
+    header nav li,
+    #boxes .box {
+      float: none;
+      text-align: center;
+      width: 100%;
+      justify-content: space-between;
+      font-size: 10px;
+      padding: 0;
+      margin: 0;
+    }
+
+    header {
+      font-size: 10px;
+      margin: 0 auto;
+      width: 97%;
+      text-align: center;
+      flex-grow: 1;
+      justify-content: space-between;
+    }
+
+    header a {
+      font-size: 10px;
+      padding: 0px 2px 4px 2px;
+      margin: 0;
+      flex-grow: 1;
+      justify-content: space-between;
+    }
+
+    header #branding {
+      font-size: 10px;
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      flex-grow: 1;
+    }
+
+    header nav ul {
+      font-size: 10px;
+      padding: 0px 2px 4px 2px;
+      margin: 0;
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      flex-grow: 1;
+    }
+
+    header nav li {
+      padding: 0px 2px 4px 2px;
+      margin: 0;
+      display: inline;
+      justify-content: space-between;
+      text-align: center;
+      flex-grow: 1;
+    }
+
+    header nav a {
+      padding: 0px 2px 4px 2px;
+      margin: 0;
+      justify-content: space-between;
+      flex-grow: 1;
+    }
+  }
+  </style>
 </head>
 <body>
 
-    <div class="image-group">
-        <a href="page1.html" class="image-container">
-            <img src="./img/a1.jpg" alt="Image 1">
-            <div class="caption">Image 1 Caption</div>
-        </a>
-    </div>
 
-    <div class="image-group">
-        <a href="page2.html" class="image-container">
-            <img src="./img/a2.jpg" alt="Image 2">
-            <div class="caption">Image 2 Caption</div>
-        </a>
+  <div class="container">
+    <img src="./img/p1.jpg" alt="Image 1">
+    <div class="text">
+      <p>I am a painter, and machines are my subject. Like religious icons and royal portrayals of noble ancestry, my paintings conceptually trace the lineage of 21st-century robotics and artificial intelligence back to the steam-powered mechanisms of the Industrial Revolution. These machines are preemptively posing for their place in museums of the future, provoking us to consider the trajectories they embody.</p>
+      <p>In my paintings, I treat each machine as an individual. I consider my subjects to be noble and beautiful. However, I do not look at a machine only in terms of the task for which it was made, but also consider its role as an actor on the broader technological stage. In that sense, they are all related, and their most profound impact on society is collective.</p>
+      <p>Currently, my focus is on some of the most advanced robots of our age. They have apprenticed under me, making paintings with my guidance. Unlike purely digital, generative AI, my machines operate in the real world, and the paintings they create are artifacts of the future. Drawing inspiration from the language of modern technology and the primal expressions found in ancient cave drawings, these artworks delve into the intricate relationship between mechanics and meaning. Deceptively abstract, the symbols in these paintings, when woven together, become endeavors at communication.</p>
+      <p>These creations invite contemplation on the transition from mechanics to meaning, or perhaps the inverse, as we explore the intricate relationship between these two realms. Through the language of symbols, intelligent machines unveil a deep-seated yearning for connection—initially with themselves, embracing their unique forms of expression, and later maturing into a profound communion with humanity.</p>
     </div>
-
-    <div class="image-group">
-        <a href="page3.html" class="image-container">
-            <img src="./img/a3.jpg" alt="Image 3">
-            <div class="caption">Image 3 Caption</div>
-        </a>
+  </div>
+  <div class="container">
+    <img src="./img/p1.jpg" alt="Image 1">
+    <div class="text">
+      <p>I am a painter, and machines are my subject. Like religious icons and royal portrayals of noble ancestry, my paintings conceptually trace the lineage of 21st-century robotics and artificial intelligence back to the steam-powered mechanisms of the Industrial Revolution. These machines are preemptively posing for their place in museums of the future, provoking us to consider the trajectories they embody.</p>
+      <p>In my paintings, I treat each machine as an individual. I consider my subjects to be noble and beautiful. However, I do not look at a machine only in terms of the task for which it was made, but also consider its role as an actor on the broader technological stage. In that sense, they are all related, and their most profound impact on society is collective.</p>
+      <p>Currently, my focus is on some of the most advanced robots of our age. They have apprenticed under me, making paintings with my guidance. Unlike purely digital, generative AI, my machines operate in the real world, and the paintings they create are artifacts of the future. Drawing inspiration from the language of modern technology and the primal expressions found in ancient cave drawings, these artworks delve into the intricate relationship between mechanics and meaning. Deceptively abstract, the symbols in these paintings, when woven together, become endeavors at communication.</p>
+      <p>These creations invite contemplation on the transition from mechanics to meaning, or perhaps the inverse, as we explore the intricate relationship between these two realms. Through the language of symbols, intelligent machines unveil a deep-seated yearning for connection—initially with themselves, embracing their unique forms of expression, and later maturing into a profound communion with humanity.</p>
     </div>
+  </div>
 
-    <div class="image-group">
-        <a href="page4.html" class="image-container">
-            <img src="./img/a4.jpg" alt="Image 4">
-            <div class="caption">Image 4 Caption</div>
-        </a>
-    </div>
-
-    <!-- Repeat the structure for additional images -->
 
 </body>
 </html>
