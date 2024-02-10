@@ -19,5 +19,5 @@ function showSlides() {
 
 // Start the slideshow when the page loads
 document.addEventListener("DOMContentLoaded", () => {
-  setTimeout(showSlides, 7500);
+  setTimeout(showSlides, 5000);
 });
