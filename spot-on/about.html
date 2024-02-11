@@ -41,7 +41,7 @@
       font-family: Helvetica, Arial, sans-serif;
       font-size: 16px;
       word-spacing: 2px;
-      clear: right;
+
     }
     .containerL .textBig {
       width: 60%;
@@ -80,7 +80,7 @@
       font-size: 16px;
       word-spacing: 2px;
       text-align:right;
-      clear: right;
+
     }
 
     .containerR .textBig {
@@ -97,10 +97,17 @@
 
 
     .containerR .text p {
-      clear: right;
+      margin-right: 25%; /* Adjust to the width of the image plus its margin-right */
+     position: relative;
+     right: -25%; /* Adjust to the negative value of margin-left */
+   }
+}
     }
 .containerL .text p{
-  clear: left;
+  margin-left: 25%; /* Adjust to the width of the image plus its margin-right */
+ position: relative;
+ left: -25%; /* Adjust to the negative value of margin-left */
+}
 }
 
 .containerR p {
