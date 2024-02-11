@@ -35,9 +35,9 @@
     }
 
     .containerL .text {
-      overflow:hidden;
+
       float:left;
-      left: 21%;
+      transform: translateX(21%);
       width: 60%;
       box-sizing: border-box; /* Includes padding and border in the width */
       padding: 1px; /* Adjust padding as needed */
@@ -76,10 +76,11 @@
     }
 
     .containerR .text {
-      overflow:hidden;
+
+      transform: translateX(-21%);
       width: 60%;
       float: right;
-      right: 21%;
+  
       box-sizing: border-box; /* Includes padding and border in the width */
       padding: 1px; /* Adjust padding as needed */
       font-family: Helvetica, Arial, sans-serif;
