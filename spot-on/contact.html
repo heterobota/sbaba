@@ -329,22 +329,30 @@
     </header>
 <a href = "mailto: media@pilatart.com">Media Contact</a>
 <a href = "mailto: charlie@pilatart.com">General Inquiries</a>
-<form action="action_page.php">
+<form name="submit-to-google-sheet">
   <div class="container">
     <h2>Subscribe to Pilat Studio Newsletter</h2>
   </div>
 
   <div class="container" style="background-color:white">
-    <input type="text" placeholder="Name" name="name" required>
     <input type="text" placeholder="Email address" name="mail" required>
-    <label>
-      <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
-    </label>
+
   </div>
 
   <div class="container">
     <input type="submit" value="Subscribe">
   </div>
 </form>
+<script>
+  const scriptURL = 'https://script.google.com/a/macros/pilatart.com/s/AKfycbwkJYGtUN8DtkRkijNGorEZdQXHHoULHmhTy_WFjCX4Xal4L8DHxLpfSoFm1jv5QjsGlA/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
   </body>
 </html>
