@@ -8,19 +8,36 @@
     <link rel="shortcut icon" type="image/png" href="./img/spotexample.png">
 
     <style>
-    /* */
-    .contact-link {
-    display: block;
-    margin: 10px 0;
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
+
 .container {
-    max-width: 400px;
+  align-self: center;
+  align-items: center;
+  font-size: 16px;
+  background-color: #e7e7e7;
+    width: auto;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
+    justify-content: center;
+    display:list-item;
+    margin: 10px 10px;
+}
+.container a{
+  font-size: 16px;
+}
+.container a:hover{
+    color:#5c5c5c;
+}
+.container a:active{
+    color:#ababab;;
+}
+.container img{
+  width: 16px;
+  height:auto;
+  padding: 4px 5px 0px 10px;
+}
+.container p{
+  font-size: 16px;
+  padding: 0px 0px;
 }
 
     /* */
@@ -44,6 +61,7 @@
           font-family: Helvetica, Arial, sans-serif;
           font-stretch: normal;
           word-spacing: 2px;
+          justify-content: center;
         }
 
       a {
@@ -330,15 +348,20 @@
 
 
 <div class="container">
-<a href = "mailto: media@pilatart.com">Media Contact</a>
-<a href = "mailto: charlie@pilatart.com">General Inquiries</a>
+<a href = "mailto: media@pilatart.com">Media Contact<img src="./img/email.png"></a>
+</div>
+<div class="container">
+<a href = "mailto: charlie@pilatart.com">General Inquiries<img src="./img/email.png"></a>
+</div>
+<div class="container">
+  <p>Sign up for Pilat Studio Newsletter:</p>
 
 <form name="submit-to-google-sheet">
     <input type="email" name="Email" placeholder="Email address" required>
-<button type="submit"><img src="./img/logo.png" width = "30px"></button>
+<button type="submit">Subscribe</button>
 </form>
 </div>
-
+<div class="container"><p>Social media:</p> <a href = "https://www.instagram.com/agnieszka_pilat/?hl=en"><img src="./img/insta.png"></a></div>
 
 <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbwkJYGtUN8DtkRkijNGorEZdQXHHoULHmhTy_WFjCX4Xal4L8DHxLpfSoFm1jv5QjsGlA/exec'
