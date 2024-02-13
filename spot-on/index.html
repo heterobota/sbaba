@@ -4,9 +4,43 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Agnieszka Pilat</title>
-    <link rel="shortcut icon" type="image/png" href="./img/spotexample.png">
+    <link rel="shortcut icon" type="image/png" href="./img/icon.png">
 
-  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Redirect Example</title>
+      <!DOCTYPE html>
+<html lang="en">
+
+    <script>
+        // Function to check if the user is on a mobile device
+        function isMobileDevice() {
+            return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+        }
+
+        // Function to redirect based on device type
+        function redirectToInitialPage() {
+            if (isMobileDevice()) {
+                // Redirect to the mobile version
+                window.location.href = "mobile.html";
+            } else {
+                // Redirect to the desktop version
+                window.location.href = "home.html";
+            }
+        }
+
+        // Call the function when the page loads
+        window.onload = redirectToInitialPage;
+    </script>
+</head>
+<body>
+    <!-- This content will be visible if JavaScript is disabled or the redirection doesn't happen for some reason -->
+    <h1>Welcome to the Default Page</h1>
+    <p>This content is visible if JavaScript is disabled or there is an issue with redirection.</p>
+</body>
+</html>
+
 
   <style>
   /* */
@@ -329,32 +363,7 @@
     </header>
 
 
-    <div class="slideshow-container">
-      <div class="slides">
-        <div class="slide">
-          <img src="./img/1.jpg" alt="Slide 1">
-        </div>
-        <div class="slide">
-          <img src="./img/2.jpg" alt="Slide 2">
-        </div>
-        <div class="slide">
-          <img src="./img/3.jpg" alt="Slide 3">
-        </div>
-        <div class="slide">
-          <img src="./img/4.jpg" alt="Slide 4">
-        </div>
-        <div class="slide">
-          <img src="./img/5.jpg" alt="Slide 5">
-        </div>
-        <div class="slide">
-          <img src="./img/6.jpg" alt="Slide 6">
-        </div>
-
-      </div>
-    </div>
-
-<script src="script.js"></script>
-
+   
 
 
 
