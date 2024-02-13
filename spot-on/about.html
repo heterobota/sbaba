@@ -21,8 +21,9 @@
     .containerL {
       margin-top: 20px;
       width: 100%;
-      height: auto;
-min-height: 55vh;
+      height:auto;
+      min-height: 65vh;
+
 
       word-spacing: 2px;
     }
@@ -65,7 +66,7 @@ transform:translateX(43%);
       margin-top: 20px;
       width: 100%;
       height: auto;
-min-height: 55vh;
+min-height: 50vh;
 
       word-spacing: 2px;
     }
@@ -76,7 +77,8 @@ min-height: 55vh;
       position:absolute;
       margin: 10px 10px;
       right: 0;
-      height:40%;
+      width:40%;
+    
      overflow:hidden;
     }
     .containerR .text a, .containerL .text a {
@@ -89,7 +91,7 @@ min-height: 55vh;
     .containerR .text {
 
 
-      transform:translateX(24%);
+      transform:translateX(-4%);
             width: 60%;
             box-sizing: border-box; /* Includes padding and border in the width */
             padding: 1px; /* Adjust padding as needed */
@@ -113,7 +115,10 @@ min-height: 55vh;
     }
 
 
-
+.footer{
+  margin: 20px 20px;
+  min-height: 80px;
+}
 
     header{
       margin: 0 auto;
@@ -194,23 +199,28 @@ justify-content: space-between;
       /*media q*/
       @media(max-width: 910px) {
         .containerL .text, .containerR .text {
-          background-color: rgba(235, 235, 235, 0.5);
+          background-color: rgba(235, 235, 235, .7);
           width: 75%;
         }
 
-        .containerL img, .containerR img{
+        .containerL img{
+          width: 60%;
+        } 
+        .containerR img{
           width:60%;
         }
         .containerL .text{
           transform:translateX(20%);
+          
           padding: 1px 10px;
         }
+         .containerR{
+          min-height: 52vh;
+        }
         .containerL{
-          height:auto;
+          min-height:80vh;
         }
-        .containerR {
-          height: auto;
-        }
+       
     header #branding,
     header nav,
     header nav ul,
@@ -547,6 +557,6 @@ justify-content: space-between;
     </div>
 
 </div>
-
+<div class="footer"></div>
 </body>
 </html>
